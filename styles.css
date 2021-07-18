@@ -1,0 +1,149 @@
+/* asterisk selects all elements */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://www.teahub.io/photos/full/17-170793_pastel-mint-green-background.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--primary-color);
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif
+}
+
+
+/* bg color and alignment of menu bar */
+
+.menu-bar {
+    background: #73dbb0;
+    text-align: center;
+}
+
+
+/* to make elements of the menu bar aligned at the same line;column part chuchu */
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: rgba(255, 255, 255, 0);
+}
+
+
+/* alignment */
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+/* kasi nilagyan ng link?(href), nagiging blue with underline siya, kaya gagawing white */
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* menu bar for hovering */
+
+.active,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+
+/* font awesome icons in menu bar */
+
+.menu-bar .fa {
+    margin-right: 8px;
+}
+
+
+/* submenu of about us */
+
+.sub-menu-1 {
+    display: none;
+}
+
+
+/* to align submenu of about us; horizontally aligned at first */
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+
+/* to align vertically the submenus */
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+
+/* to add lines(border bottom) on the submenus */
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+/* to remove the last line in 'team' submenu */
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+
+/* when hovering the submenus */
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #b2ff00;
+}
+
+
+/* to move the right arrow to right */
+
+.fa-angle-right {
+    float: right;
+}
+
+
+/* to not display submenus of marketing and mobile apps dev */
+
+.sub-menu-2 {
+    display: none;
+}
+
+
+/* to display submenus of marketing and mobile apps dev in a right position */
+
+.hover-me:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-bottom: 140px;
+    background: rgba(0, 100, 0);
+}

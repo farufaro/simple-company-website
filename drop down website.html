@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <!-- width -device-width sets the width of the page to follow the screen-width of the device -->
+    <!-- initial-scale=1 sets intial zoom level when the page is first loaded by the browser -->
+    <meta name="viewport" content="width-device-width,initial-scale=1">
+    <title>Drop-down Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" type='text/css' />
+</head>
+
+<body>
+    <div class="logo"><a href="#">Company.</a></div>
+    <div class="menu-bar">
+        <ul>
+            <!-- fa - icons from font awesome -->
+            <!-- # id for home to be active without hovering; bcos you are currently on the 'home' when opening the website -->
+            <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i>About Us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-archive"></i>Products</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Customer Helpdesk</a></li>
+                        <li><a href="#">FAQ Support</a></li>
+                        <li><a href="#">News Publisher</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Web Developement</a></li>
+                        <li><a href="#">Web Designing</a></li>
+                        <li class="hover-me"><a href="#"><i class="fa fa-angle-right"></i>Marketing</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Social Media</a></li>
+                                    <li><a href="#">Email Marketing</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="#"><i class="fa fa-angle-right"></i>Mobile Applications Developement</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Android Applications</a></li>
+                                    <li><a href="#">iOS Applications</a></li>
+                                    <li><a href="#">Flutter Applications</a></li>
+                                    <li><a href="#">Flutter Applications</a></li>
+                                    <li><a href="#">Unity Applications</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-users"></i>Clients</a></li>
+            <li><a href="#"><i class="fa fa-briefcase"></i>Careers</a></li>
+            <li class="hover-me"><a href="#"><i class="fa fa-phone"></i>Contact Us</a></i>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-phone-square"></i>(028)-123-4567</a></li>
+                        <li><a href="#"><i class="fa fa-mobile"></i>0921-234-5678</a></li>
+
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
